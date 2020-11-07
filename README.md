@@ -47,6 +47,14 @@ The `frontend` service is a web frontend that allows to browse the data: Its mai
 * Add a back action on the website details page
 * make screenshot screen resolution configurable 
 
+## Setup
+
+gcloud auth login
+gcloud projects list
+gcloud config set project nodejs-microservices-294921
+gcloud app create
+npm run deploy
+
 ## License
 
 [Apache 2.0](./LICENSE)
