@@ -5,6 +5,10 @@ Simple function that compares any new image uploaded to GCS with a reference ima
 ## Dependencies
 
 - a GCS bucket, create one with `gsutil mb gs://[GLOBALLY_UNIQUE_BUCKET_NAME]` (and update the deploy command in `package.json` to reflect this)
+
+Here:
+gsutil mb gs://gs-screenshot-bucket
+
 - Enable the Cloud Functions API
 
 ## Deploy

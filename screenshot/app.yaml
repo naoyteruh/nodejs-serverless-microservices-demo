@@ -11,14 +11,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License
 
-service: screenshot
+service: service-screenshot
 
-runtime: nodejs8
+runtime: nodejs10
 
 instance_class: F4_1G
 
 env_variables:
-  SCREENSHOT_BUCKET_NAME: screenshots-microservice-demo
+  SCREENSHOT_BUCKET_NAME: gs-screenshot-bucket
   # see https://github.com/GoogleCloudPlatform/cloud-trace-nodejs#tracing-with-asyncawait
   GCLOUD_TRACE_NEW_CONTEXT: 1
 

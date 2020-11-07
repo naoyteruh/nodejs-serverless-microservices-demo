@@ -7,7 +7,7 @@
     "test": "npm run lint && npm run tap",
     "tap": "tap test/test-*.js",
     "lint": "eslint *.js test/",
-    "deploy": "gcloud beta functions deploy imageDiff --trigger-resource screenshots-microservice-demo --trigger-event google.storage.object.finalize"
+    "deploy": "gcloud beta functions deploy imageDiff --trigger-resource screenshots-trigger-resource --trigger-event google.storage.object.finalize"
   },
   "author": {
     "name": "Google LLC"
