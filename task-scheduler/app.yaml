@@ -16,9 +16,9 @@ runtime: nodejs8
 
 # Replace these with yours
 env_variables:
-  GOOGLE_CLOUD_PROJECT: 'nodejs-microservices-demo'
-  QUEUE_ID: 'screenshots'
-  QUEUE_LOCATION: 'us-central1'
-  TARGET_SERVICE: 'screenshot'
-  TOPIC_NAME: 'screenshots'
-  SUBSCRIPTION_NAME: 'screenshots'
+  GOOGLE_CLOUD_PROJECT: 'nodejs-microservices'
+  QUEUE_ID: 'nodejs-microservices-queue'
+  QUEUE_LOCATION: 'europe-west1-b'
+  TARGET_SERVICE: 'service-screenshot'
+  TOPIC_NAME: 'topic-screenshots'
+  SUBSCRIPTION_NAME: 'subs-screenshots'
