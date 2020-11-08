@@ -1,4 +1,4 @@
-const gcDebug = require('gcDebug.js');
+const gcDebug = require('./gcDebug.js');
 
 
 const traceApi = require('@google-cloud/trace-agent').start({
