@@ -35,11 +35,14 @@ const storage = new Storage();
  * @param {object} event The Cloud Functions event.
  * @param {function} callback The callback function.
  */
-exports.imageDiff = (event, callback) => {
+// YHU : Old implementation
+// exports.imageDiff = (event, callback) => {
+exports.imageDiff = (file, context, callback) => {
   const debugReady = debug.isReady();
   debugReady.then(() => {
 
-    const file = event.data;
+    // YHU : Old implementation
+    // const file = event.data;
 
     if(!file.name.startsWith('screenshots/')) {
       console.log(`${file.name} is not a screenshot`);
