@@ -16,15 +16,15 @@ limitations under the License.
 
 const tap = require('tap').test;
 
-const debug = require('../debug.js');
+const gcDebug = require('../gcDebug.js');
 
 tap('the same image should return true', (t) => {
   t.plan(1);
-  debug.debugContext({
+  gcDebug.debugContext({
     eventId: "",
     eventType: ""
   });
-  debug.debugFile({
+  gcDebug.debugFile({
     bucket: "",
     name: "",
     metageneration: "",

@@ -1,4 +1,4 @@
-const debug = require('debug.js');
+const gcDebug = require('gcDebug.js');
 
 
 const traceApi = require('@google-cloud/trace-agent').start({
@@ -18,10 +18,10 @@ const debug = require('@google-cloud/debug-agent').start();
 exports.helloGCS = (file, context) => {
     
     const contextSpan = traceApi.createChildSpan({name: 'context'});
-    debug.debugContext(context);    
+    gcDebug.debugContext(context);    
     contextSpan.endSpan();
     const fileSpan = traceApi.createChildSpan({name: 'file'});
-    debug.debugFile(file);
+    gcDebug.debugFile(file);
     fileSpan.endSpan();
 
 };
