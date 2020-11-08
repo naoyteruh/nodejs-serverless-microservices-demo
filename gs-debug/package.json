@@ -1,0 +1,18 @@
+{
+  "name": "gs-debug",
+  "version": "1.0.0",
+  "description": "Simple function to debug Google storage",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && npm run tap",
+    "tap": "tap test/test-*.js",
+    "lint": "eslint *.js test/",
+    "deploy": "gcloud beta functions deploy helloGCS --trigger-resource gs-screenshot-bucket --trigger-event google.storage.object.finalize --runtime nodejs10"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "tap": "^14.10.8"
+  }
+}

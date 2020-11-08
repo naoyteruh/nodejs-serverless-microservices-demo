@@ -30,9 +30,12 @@ gcloud beta pubsub subscriptions create $SUBSCRIPTION_NAME \
    --ack-deadline 30
 ```
 Here:
+
 ```
-gcloud beta pubsub subscriptions create subs-screenshots --topic topic-screenshots --push-endpoint https://service-screenshot-dot-nodejs-microservices.appspot.com/ --ack-deadline 30
+gcloud beta pubsub subscriptions create subs-screenshots --topic topic-screenshots --push-endpoint https://service-screenshot-dot-nodejs-microservices-294921.ew.r.appspot.com/ --ack-deadline 30
 ```
+
+/!\ push-endpoint is the url of deployed `screenshot` service
 
 ## Development
 
