@@ -17,8 +17,21 @@
 
 // Stackdriver APM
 require('@google-cloud/trace-agent').start();
-require('@google-cloud/debug-agent').start({allowExpressions: true});
-require('@google-cloud/profiler').start();
+require('@google-cloud/debug-agent').start({
+    // projectId: 'nodejs-microservices-294921',
+    // keyFilename: 'key.json',
+    serviceContext: {
+        service: 'frontend',
+        version: '1.0.0'
+    },
+    allowExpressions: true
+});
+require('@google-cloud/profiler').start({
+    serviceContext: {
+        service: 'frontend',
+        version: '1.0.0',
+    }
+});
 
 /**
  * Module dependencies.
