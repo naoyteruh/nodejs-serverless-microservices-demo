@@ -11,8 +11,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License
 
+# Switched to https://console.cloud.google.com/cloudscheduler
 cron:
-- description: "look for webpages to screenshot"
-  url: /
-  schedule: every 5 minutes
-  target: task-scheduler
+
+# cron:
+# - description: "look for webpages to screenshot"
+#   url: /
+#   schedule: every 2 hours
+#   target: task-scheduler
+
+# cron:
+# - description: "look for webpages to screenshot"
+#   url: /
+#   schedule: every 5 minutes
+#   target: task-scheduler
